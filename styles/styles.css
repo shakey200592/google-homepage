@@ -1,6 +1,8 @@
 *, ::before, ::after {
     box-sizing: border-box;
     font-size: 10pt;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -19,7 +21,9 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
+
 
 #nav-right {
     display: flex;
@@ -27,12 +31,22 @@ header {
     align-items: center;
 }
 
-a {
+#nav-left a, #nav-right a {
     padding: 0.4em;
     text-decoration: none;
     color: black;
     text-align: center;
     margin: 0.5em;
+}
+
+
+#nav-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav-footer a {
+    padding: 0 30px;
 }
 
 #google-apps {
@@ -48,9 +62,10 @@ a {
 
 .outer-container {
     width: 100%;
-    height: 50vh;
+    height: 94vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: start;
     align-items: center;
 }
 
@@ -59,8 +74,25 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50vh;
     width: 100%;
+    height: 90vh;
+
+
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20%;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+
+.ulink:hover
+{
+    text-decoration:underline;
 }
 
 #google-logo {
@@ -69,6 +101,35 @@ a {
     
 
 }
+
+#carbon {
+    text-align: center;
+    color: #70757a;
+    padding: 15px;
+}
+
+#uk {
+    text-align: left;
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: rgba(0,0,0,.54);
+}
+
+nav {
+    padding: 15px;
+}
+
+#nav-footer a, #carbon {
+    text-decoration: none;
+    color: #70757a;
+}
+
+#nav-footer a:hover, #carbon:hover {
+    text-decoration: underline;
+}
+
+
 
 #search-icon {
     width: 2.0em;
