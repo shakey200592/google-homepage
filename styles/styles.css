@@ -89,7 +89,7 @@ a {
 
 }
 
-@media(min-width: 607px) {
+@media(min-width: 619px) {
     .main-container {
         max-width: 582px;
     }
