@@ -24,6 +24,16 @@ header {
     
 }
 
+#nav-left a:hover {
+    text-decoration: underline;
+
+}
+
+#nav-right a:hover {
+    text-decoration: underline;
+
+}
+
 
 #nav-right {
     display: flex;
